@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Google Sheets Clone</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- For data visualization -->
+  <script src="https://cdn.jsdelivr.net/npm/xlsx/dist/xlsx.full.min.js"></script>
+
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+        <h1>Google Sheets Clone</h1>
+        <div class="toolbar">
+          <button onclick="applyStyle('bold')">Bold</button>
+          <button onclick="applyStyle('italic')">Italic</button>
+          <button onclick="applyStyle('underline')">Underline</button>
+          <button>Text Color <input type="color" onchange="applyColor(this.value)"></button>
+          <button onclick="addColumn()">Add Row</button> <!-- Add Row button -->
+          <button onclick="addRow()">Add Column</button> <!-- Add Column button -->
+        </div>
+      </nav>
+  </header>
+
+  <main>
+    <div class="controls">
+      <input id="formulaBar" type="text" placeholder="Enter formula or value here">
+      <button onclick="applyFormula()">Apply Formula</button>
+    </div>
+    <div id="spreadsheet-container">
+      <div id="spreadsheet">
+        <!-- Cells are dynamically generated -->
+      </div>
+    </div>
+
+    <div id="dataValidationMessage"></div>
+
+    <div class="save-load">
+        <button onclick="saveSpreadsheet()">Save Spreadsheet</button>
+        <input type="file" onchange="loadSpreadsheet(event)">
+    </div>
+    
+
+    <div class="chart">
+      <button onclick="createChart()">Create Chart</button>
+      <canvas id="chartCanvas" width="20" height="20"></canvas>
+      <button onclick="testFunctions()">Run Tests</button>
+<div id="testResults"></div>
+    </div>
+
+  </main>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,112 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #4285f4;
+    color: white;
+    padding: 10px 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.toolbar button, .toolbar input {
+    margin-right: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    background-color: #f1f1f1;
+    transition: background-color 0.2s, border-color 0.2s;
+}
+
+.toolbar button.active {
+    background-color: #4285f4;
+    color: white;
+    border-color: #005cbf;
+}
+
+.toolbar button:hover {
+    background-color: #e0e0e0;
+}
+
+main {
+    padding: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.controls {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.controls input {
+    flex: 1;
+    padding: 5px;
+    margin-right: 10px;
+}
+
+#spreadsheet-container {
+    flex: 1;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ddd;
+}
+
+#spreadsheet {
+    display: grid;
+    grid-template-columns: repeat(10000, minmax(100px, 1fr));
+    grid-auto-rows: minmax(30px, auto);
+    background-color: #fff;
+}
+
+.cell.header {
+    background-color: #f1f1f1;
+    font-weight: bold;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    box-sizing: border-box;
+}
+
+.cell {
+    background-color: white;
+    padding: 5px;
+    text-align: left;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    min-height: 30px;
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+}
+
+.cell[contenteditable="true"]:focus {
+    outline: 2px solid #4285f4;
+}
+
+.save-load {
+    margin: 20px 0;
+}
+
+#chartCanvas {
+    margin-top: 20px;
+}
+
+#dataValidationMessage {
+    color: red;
+    margin-top: 10px;
+}
