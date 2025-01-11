@@ -2,6 +2,8 @@
 This project is a web application that mimics the user interface and core functionalities of Google Sheets. The application is built using HTML, CSS, and JavaScript and supports key features such as mathematical functions, data quality tools, dynamic cell interactions, and more.
 
 ---
+Live Demo : https://vinay-jalluri.github.io/Web-Application-Mimicking-Google-Sheets/
+
 ![WhatsApp Image 2025-01-11 at 20 12 28_def2d57c](https://github.com/user-attachments/assets/27632d11-48a4-482b-93a3-6528980049d0)
 ## Features
 
