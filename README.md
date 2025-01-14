@@ -54,12 +54,12 @@ The following mathematical functions are supported:
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/your-username/google-sheets-clone.git
+   git clone https://github.com/vinay-jalluri/Web-Application-Mimicking-Google-Sheets.git
    ```
 
 2. Navigate to the project directory:
    ```bash
-   cd google-sheets-clone
+   cd Web-Application-Mimicking-Google-Sheets
    ```
 
 3. Open `index.html` in a browser to run the application.
@@ -95,27 +95,6 @@ The following mathematical functions are supported:
 2. **Auto-Update Dependencies:** Ensure formulas update automatically when dependent cells change.
 3. **Advanced Charting:** Allow users to customize chart types and ranges.
 4. **Improved Data Validation:** Add stricter validation rules for specific data types.
-
----
-
----
-
-## Contributing
-
-1. Fork the repository.
-2. Create a new branch:
-   ```bash
-   git checkout -b feature-name
-   ```
-3. Commit your changes:
-   ```bash
-   git commit -m 'Add some feature'
-   ```
-4. Push to the branch:
-   ```bash
-   git push origin feature-name
-   ```
-5. Open a pull request.
 
 ---
 
